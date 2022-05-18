@@ -81,7 +81,7 @@ export const Post = ({ data }) => {
             component={LinkWrapper}
             variant="caption"
             color="text.secondary"
-            to="/comments"
+            to={`${baseurl}/comments`}
             state={post?.comments}
           >
             View all {post.comments_count} comments
