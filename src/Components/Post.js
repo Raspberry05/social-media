@@ -18,71 +18,73 @@ export const Post = ({ data }) => {
   const navigate = useNavigate();
 
   return (
-    <Card id={data.username} sx={{ mx: 1, my: 2 }}>
-      <CardHeader
-        avatar={
-          <Link
-            underline="none"
-            color="inherit"
-            component={LinkWrapper}
-            to={`/profile/${data.username}`}
-          >
-            <Avatar username={data?.username} />
-          </Link>
-        }
-        title={
-          <Link
-            underline="none"
-            color="inherit"
-            component={LinkWrapper}
-            to={`/profile/${data.username}`}
-          >
-            <Typography>@{data.username}</Typography>{" "}
-          </Link>
-        }
-        action={
-          <IconButton aria-label="settings">
-            <MoreHorizIcon />
-          </IconButton>
-        }
-      />
-      <CardMedia>
-        <img
-          src={post?.image}
-          style={{ height: 400, width: "100%", objectFit: "cover" }}
-          alt=""
+    <div id={data.username}>
+      <Card sx={{ mx: 1, my: 2 }}>
+        <CardHeader
+          avatar={
+            <Link
+              underline="none"
+              color="inherit"
+              component={LinkWrapper}
+              to={`/profile/${data.username}`}
+            >
+              <Avatar username={data?.username} />
+            </Link>
+          }
+          title={
+            <Link
+              underline="none"
+              color="inherit"
+              component={LinkWrapper}
+              to={`/profile/${data.username}`}
+            >
+              <Typography>@{data.username}</Typography>{" "}
+            </Link>
+          }
+          action={
+            <IconButton aria-label="settings">
+              <MoreHorizIcon />
+            </IconButton>
+          }
         />
-      </CardMedia>
-      <CardActions disableSpacing sx={{ pb: 0 }}>
-        <IconButton>
-          <FavoriteBorderIcon />
-        </IconButton>
+        <CardMedia>
+          <img
+            src={post?.image}
+            style={{ height: 400, width: "100%", objectFit: "cover" }}
+            alt=""
+          />
+        </CardMedia>
+        <CardActions disableSpacing sx={{ pb: 0 }}>
+          <IconButton>
+            <FavoriteBorderIcon />
+          </IconButton>
 
-        <IconButton
-          onClick={() => navigate("/comments", { state: post?.comments })}
-        >
-          <ChatBubbleOutlineIcon />
-        </IconButton>
-      </CardActions>
+          <IconButton
+            onClick={() => navigate("/comments", { state: post?.comments })}
+          >
+            <ChatBubbleOutlineIcon />
+          </IconButton>
+        </CardActions>
 
-      <CardContent sx={{ py: 0 }}>
-        <Typography variant="caption" color="text.secondary" fontWeight={700}>
-          {post?.likes} likes
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {post.description}
-        </Typography>
+        <CardContent sx={{ py: 0 }}>
+          <Typography variant="caption" color="text.secondary" fontWeight={700}>
+            {post?.likes} likes
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            {post.description}
+          </Typography>
 
-        <Link
-          component={LinkWrapper}
-          variant="caption"
-          color="text.secondary"
-          to="/comments"
-          state={post?.comments}
-        >
-          View all {post.comments_count} comments
-        </Link>
-      </CardContent>
-    </Card>
+          <Link
+            component={LinkWrapper}
+            variant="caption"
+            color="text.secondary"
+            to="/comments"
+            state={post?.comments}
+          >
+            View all {post.comments_count} comments
+          </Link>
+        </CardContent>
+      </Card>
+    </div>
   );
 };

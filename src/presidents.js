@@ -10,19 +10,19 @@ export const presidents = [
         likes: "25.3k",
         comments: [
           {
-            user_ref: "Dwight.Eisenhower",
+            user_ref: "DwightEisenhower",
             text: "😄",
           },
           {
-            user_ref: "Harry.S.Truman_D",
+            user_ref: "HarrySTruman_D",
             text: "😙",
           },
           {
-            user_ref: "D.Roosevelt_Franklin",
+            user_ref: "DRoosevelt_Franklin",
             text: "🙂",
           },
           {
-            user_ref: "D.Roosevelt_Franklin",
+            user_ref: "DRoosevelt_Franklin",
             text: "Let's just act like we've never heard of the \"Social Security Act\".",
           },
         ],
@@ -37,7 +37,7 @@ export const presidents = [
   },
   {
     name: "John F. Kennedy",
-    username: "JKennedy_N22.1963",
+    username: "JKennedy_N22_1963",
     posts: [
       {
         image: "https://www.nasa.gov/images/content/59593main_jfk_330.jpg",
@@ -45,43 +45,43 @@ export const presidents = [
         likes: "872.5k",
         comments: [
           {
-            user_ref: "G.HardingWarren1",
+            user_ref: "GHardingWarren1",
             text: "So… how’s your wife, Jacqueline?",
           },
           {
-            user_ref: "JKennedy_N22.1963",
-            text: "@G.HardingWarren1 Shut up Harding! We know you had an affair with Nan Britton",
+            user_ref: "JKennedy_N22_1963",
+            text: "@GHardingWarren1 Shut up Harding! We know you had an affair with Nan Britton",
           },
           {
-            user_ref: "G.HardingWarren1",
-            text: "@JKennedy_N22.1963 But I’m not the one that had 11 affairs! I’d even name them! Marilyn Monroe, Judith Exner, Inga Arvad, Anita Ekberg… Ellen Rometsch, Gene Tierney, Mimi Alfold, Marlene Dietrich, Mary Pinchot Meyer, Fiddle and Faddle!",
+            user_ref: "GHardingWarren1",
+            text: "@JKennedy_N22_1963 But I’m not the one that had 11 affairs! I’d even name them! Marilyn Monroe, Judith Exner, Inga Arvad, Anita Ekberg… Ellen Rometsch, Gene Tierney, Mimi Alfold, Marlene Dietrich, Mary Pinchot Meyer, Fiddle and Faddle!",
           },
           {
-            user_ref: "Dwight.Eisenhower",
+            user_ref: "DwightEisenhower",
             text: "“Fiddle” and “Faddle”?",
           },
           {
-            user_ref: "G.HardingWarren1",
-            text: "@Dwight.Eisenhower Priscilla Wear and Jill Cowen, both of his assistants from the White House.",
+            user_ref: "GHardingWarren1",
+            text: "@DwightEisenhower Priscilla Wear and Jill Cowen, both of his assistants from the White House.",
           },
           {
-            user_ref: "Calvin.Cool2",
-            text: "@JKennedy_N22.1963 Right.. Listen to the guy that left me with their Teapot Dome Scandal.",
+            user_ref: "CalvinCool2",
+            text: "@JKennedy_N22_1963 Right.. Listen to the guy that left me with their Teapot Dome Scandal.",
           },
           {
-            user_ref: "W.Wilson",
-            text: "@G.HardingWarren1 So how’s the drinking? :)",
+            user_ref: "W_Wilson",
+            text: "@GHardingWarren1 So how’s the drinking? :)",
           },
           {
-            user_ref: "G.HardingWarren1",
-            text: "@W.Wilson Prohibition is doing… alright. Aha…",
+            user_ref: "GHardingWarren1",
+            text: "@W_Wilson Prohibition is doing… alright. Aha…",
           },
           {
-            user_ref: ".HH.",
+            user_ref: "_HH_",
             text: "Uhm guys… why ain’t I verified?",
           },
           {
-            user_ref: "D.Roosevelt_Franklin",
+            user_ref: "DRoosevelt_Franklin",
             text: "C’mon, no one likes you.",
           },
         ],
@@ -94,7 +94,7 @@ export const presidents = [
   },
   {
     name: "Dwight D. Eisenhower",
-    username: "Dwight.Eisenhower",
+    username: "DwightEisenhower",
     posts: [
       {
         image:
@@ -111,7 +111,7 @@ export const presidents = [
   },
   {
     name: "Harry S. Truman",
-    username: "Harry.S.Truman_",
+    username: "HarrySTruman_",
     posts: [
       {
         image:
@@ -120,7 +120,7 @@ export const presidents = [
         likes: "13.8k",
         comments: [
           {
-            user_ref: "G.HardingWarren1",
+            user_ref: "GHardingWarren1",
             text: "Of course we’re caring about security right after we dropped two bombs on Nippon.",
           },
         ],
@@ -133,7 +133,7 @@ export const presidents = [
   },
   {
     name: "Franklin D. Roosevelt",
-    username: "D.Roosevelt_Franklin",
+    username: "DRoosevelt_Franklin",
     posts: [
       {
         image:
@@ -142,20 +142,20 @@ export const presidents = [
         likes: "19.8k",
         comments: [
           {
-            user_ref: ".HH.",
+            user_ref: "_HH_",
             text: "You do realize I came up with that concept, right?",
           },
           {
             user_ref: "D.Roosevelt_Fraklin",
-            text: "@.HH. Guess what?",
+            text: "@_HH_ Guess what?",
           },
           {
-            user_ref: ".HH.",
+            user_ref: "_HH_",
             text: "@D.Roosevelt_Fraklin What?",
           },
           {
             user_ref: "D.Roosevelt_Fraklin",
-            text: "@.HH. Chicken butt.",
+            text: "@_HH_ Chicken butt.",
           },
         ],
         comments_count: "4",
@@ -167,7 +167,7 @@ export const presidents = [
   },
   {
     name: "Herbert Hoover",
-    username: ".HH.",
+    username: "_HH_",
     posts: [
       {
         image:
@@ -185,7 +185,7 @@ export const presidents = [
   },
   {
     name: "Calvin Coolidge",
-    username: "Calvin.Cool2",
+    username: "CalvinCool2",
     posts: [
       {
         image:
@@ -203,7 +203,7 @@ export const presidents = [
   },
   {
     name: "Warren G. Harding",
-    username: "G.HardingWarren1",
+    username: "GHardingWarren1",
     posts: [
       {
         image:
@@ -212,27 +212,27 @@ export const presidents = [
         likes: "8,167",
         comments: [
           {
-            user_ref: "W.Wilson",
-            text: "@G.HardingWarren1 So how’s Prohibition? :)",
+            user_ref: "W_Wilson",
+            text: "@GHardingWarren1 So how’s Prohibition? :)",
           },
           {
-            user_ref: "G.HardingWarren1",
+            user_ref: "GHardingWarren1",
             text: "You're creeping me out dude…",
           },
           {
-            user_ref: "W.Wilson",
+            user_ref: "W_Wilson",
             text: ":)",
           },
           {
-            user_ref: "W.Wilson",
-            text: "@G.HardingWarren1 Don’t worry, I’m also disappointed my veto was overridden by the House Judiciary committee. :<",
+            user_ref: "W_Wilson",
+            text: "@GHardingWarren1 Don’t worry, I’m also disappointed my veto was overridden by the House Judiciary committee. :<",
           },
           {
-            user_ref: "G.HardingWarren1",
+            user_ref: "GHardingWarren1",
             text: "Can you stop with the emoticons?",
           },
           {
-            user_ref: "W.Wilson",
+            user_ref: "W_Wilson",
             text: ":>",
           },
         ],
@@ -245,7 +245,7 @@ export const presidents = [
   },
   {
     name: "Woodrow Wilson",
-    username: "W.Wilson",
+    username: "W_Wilson",
     posts: [
       {
         image:
