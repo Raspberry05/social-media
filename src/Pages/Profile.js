@@ -54,7 +54,7 @@ export const Profile = () => {
         <Typography variant="body2" fontWeight={500}>
           {name}
         </Typography>
-        <Typography variant="caption">Here's my Report Card: <Link target="_blank" href={about} /></Typography>
+        <Typography variant="caption">Here's my Report Card: <Link target="_blank" href={about} >Link</Link></Typography>
       </Grid>
 
       <Grid container flexDirection="row">
