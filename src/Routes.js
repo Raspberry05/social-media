@@ -3,11 +3,9 @@ import { Routes as Router, Route } from "react-router-dom";
 import { Comments, Dashboard, Profile } from "./Pages/";
 import { NavBar } from "./Components/NavBar";
 import { Box } from "@mui/system";
+import { baseurl } from "./utils";
 
 export const Routes = () => {
-  const baseurl =
-    window.location.hostname === "localhost" ? "" : "/social-media/";
-
   return (
     <>
       <NavBar />
@@ -18,7 +16,7 @@ export const Routes = () => {
           <Route exact path={`${baseurl}/comments`} element={<Comments />} />
           <Route
             exact
-            path={`${baseurl}/Profile/:username`}
+            path={`${baseurl}/profile/:username`}
             element={<Profile />}
           />
         </Router>

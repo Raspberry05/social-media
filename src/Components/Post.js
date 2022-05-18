@@ -12,6 +12,7 @@ import Link from "@mui/material/Link";
 import { Link as LinkWrapper, useNavigate } from "react-router-dom";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import { Avatar } from "../Components/Avatar";
+import { baseurl } from "../utils";
 
 export const Post = ({ data }) => {
   const [post] = data?.posts;
@@ -60,7 +61,9 @@ export const Post = ({ data }) => {
           </IconButton>
 
           <IconButton
-            onClick={() => navigate("/comments", { state: post?.comments })}
+            onClick={() =>
+              navigate(`${baseurl}/comments`, { state: post?.comments })
+            }
           >
             <ChatBubbleOutlineIcon />
           </IconButton>

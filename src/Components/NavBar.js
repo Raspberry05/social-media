@@ -7,6 +7,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { presidents } from "../presidents";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import IconButton from "@mui/material/IconButton";
+import { baseurl } from "../utils";
 
 const capitalizeFirstLetter = ([first, ...rest], locale = navigator.language) =>
   first.toLocaleUpperCase(locale) + rest.join("");
@@ -24,7 +25,7 @@ export const NavBar = () => {
       <AppBar position="fixed">
         <Toolbar variant="dense">
           <Typography variant="h6" color="inherit" component="div">
-            {pathname !== "/" ? (
+            {pathname !== baseurl ? (
               <>
                 <IconButton
                   onClick={() => navigate(-1)}

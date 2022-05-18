@@ -4,6 +4,7 @@ import { Avatar } from "../Components/Avatar";
 import { presidents } from "../presidents";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
+import { baseurl } from "../utils";
 
 export const Profile = () => {
   const { username } = useParams();
@@ -62,7 +63,7 @@ export const Profile = () => {
             <ImageListItem
               key={post.image}
               onClick={() => {
-                navigate(`/#${username}`);
+                navigate(`${baseurl}/#${username}`);
               }}
             >
               <img alt="" src={post.image} />
