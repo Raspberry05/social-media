@@ -1,4 +1,4 @@
-import { Container, Grid, Typography } from "@mui/material";
+import { Container, Grid, Typography, Link } from "@mui/material";
 import { useNavigate, useParams } from "react-router-dom";
 import { Avatar } from "../Components/Avatar";
 import { presidents } from "../presidents";
@@ -12,7 +12,7 @@ export const Profile = () => {
   const {
     followers,
     following,
-    about = "about asdfj alksdjfhlk asjhdflk jashdl asdfb akjsdf kjashgdfkj hagskjdfhg aksjdhfg kjashdgf kjhasgdfk jhasgdkfjhasgkfj halskjdh",
+    about,
     name,
     posts,
   } = presidents.find((president) => president.username === username);
@@ -54,7 +54,7 @@ export const Profile = () => {
         <Typography variant="body2" fontWeight={500}>
           {name}
         </Typography>
-        <Typography variant="caption">{about}</Typography>
+        <Typography variant="caption">Here's my Report Card: <Link target="_blank" href={about} /></Typography>
       </Grid>
 
       <Grid container flexDirection="row">

@@ -33,7 +33,7 @@ export const presidents = [
     ],
     followers: "4M",
     following: "9",
-    about: "",
+    about: "https://docs.google.com/document/d/1xcLOWYh8rN9l9YvEZEBOWN-vXXBPakmHtZJ91CXHFEM/edit?usp=sharing",
   },
   {
     name: "John F. Kennedy",
@@ -91,6 +91,7 @@ export const presidents = [
     ],
     followers: "26.3M",
     following: "9",
+    about: "https://docs.google.com/document/d/1tKmttjc6KE6E3FB_lEa0UnH0lLDiVGUAtR-6THTQIZ8/edit?usp=sharing",
   },
   {
     name: "Dwight D. Eisenhower",
@@ -108,6 +109,7 @@ export const presidents = [
     ],
     followers: "28.6k",
     following: "9",
+    about: "https://docs.google.com/document/d/1m-GXpIE7hH6cQaT8qsZKYLZMJPNUarqddgXC7c5g0KQ/edit?usp=sharing",
   },
   {
     name: "Harry S. Truman",
@@ -130,6 +132,7 @@ export const presidents = [
     ],
     followers: "712.4k",
     following: "9",
+    about: "https://docs.google.com/document/d/1LF0HQDpPwQgSNtlKCUlX09ThBbWQ05HM16TgKOpxVAk/edit?usp=sharing",
   },
   {
     name: "Franklin D. Roosevelt",
@@ -164,6 +167,7 @@ export const presidents = [
     ],
     followers: "54.2k",
     following: "9",
+    about: "https://docs.google.com/document/d/12F0psqVIUp0g08XLaGfo0UyajVwfX52XJhsJD_SUmpA/edit?usp=sharing",
   },
   {
     name: "Herbert Hoover",
@@ -182,6 +186,7 @@ export const presidents = [
     ],
     followers: "4.1k",
     following: "9",
+    about: "https://docs.google.com/document/d/1BwR7W9j8ZASjv8q7NI7HenCHTO6P-NCVzcbA6ru03uc/edit?usp=sharing",
   },
   {
     name: "Calvin Coolidge",
@@ -200,6 +205,7 @@ export const presidents = [
     ],
     followers: "24.8M",
     following: "9",
+    about: "https://docs.google.com/document/d/1GABSaDshTHLEi58Gn6C0ZLvTaI1pYJ8xu7kpmOrPZGE/edit?usp=sharing",
   },
   {
     name: "Warren G. Harding",
@@ -242,6 +248,7 @@ export const presidents = [
     ],
     followers: "17.3k",
     following: "9",
+    about: "https://docs.google.com/document/d/1FejsfaWT8pd0OWc5oi6llTWEoxpiorKHip0AA6L-C44/edit?usp=sharing",
   },
   {
     name: "Woodrow Wilson",
@@ -260,5 +267,6 @@ export const presidents = [
     ],
     followers: "8.5k",
     following: "9",
+    about: "https://docs.google.com/document/d/1VyQJ6T_rFE9kSHLsWRNbeF50tSdvfDlHIVg4oo5cPcU/edit?usp=sharing",
   },
 ];
