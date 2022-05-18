@@ -8,6 +8,9 @@ import { presidents } from "../presidents";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import IconButton from "@mui/material/IconButton";
 
+const capitalizeFirstLetter = ([first, ...rest], locale = navigator.language) =>
+  first.toLocaleUpperCase(locale) + rest.join("");
+
 export const NavBar = () => {
   const { pathname } = useLocation();
   const navigate = useNavigate();
@@ -29,7 +32,9 @@ export const NavBar = () => {
                 >
                   <ArrowBackIcon />
                 </IconButton>
-                {president?.username ? president.username : pathname}
+                {president?.username
+                  ? president.username
+                  : capitalizeFirstLetter(pathname.substring(1))}
               </>
             ) : (
               "WeThePeople"

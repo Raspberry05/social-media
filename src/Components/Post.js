@@ -50,6 +50,7 @@ export const Post = ({ data }) => {
         <img
           src={post?.image}
           style={{ height: 400, width: "100%", objectFit: "cover" }}
+          alt=""
         />
       </CardMedia>
       <CardActions disableSpacing sx={{ pb: 0 }}>
@@ -57,7 +58,9 @@ export const Post = ({ data }) => {
           <FavoriteBorderIcon />
         </IconButton>
 
-        <IconButton>
+        <IconButton
+          onClick={() => navigate("/comments", { state: post?.comments })}
+        >
           <ChatBubbleOutlineIcon />
         </IconButton>
       </CardActions>
@@ -77,7 +80,7 @@ export const Post = ({ data }) => {
           to="/comments"
           state={post?.comments}
         >
-          View all 100k comments
+          View all {post.comments_count} comments
         </Link>
       </CardContent>
     </Card>

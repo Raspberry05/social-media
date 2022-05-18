@@ -65,7 +65,7 @@ export const Profile = () => {
                 navigate(`/#${username}`);
               }}
             >
-              <img src={post.image} />
+              <img alt="" src={post.image} />
             </ImageListItem>
           ))}
         </ImageList>
