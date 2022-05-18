@@ -27,7 +27,7 @@ export const Post = ({ data }) => {
               underline="none"
               color="inherit"
               component={LinkWrapper}
-              to={`/profile/${data.username}`}
+              to={`${baseurl}/profile/${data.username}`}
             >
               <Avatar username={data?.username} />
             </Link>
@@ -37,7 +37,7 @@ export const Post = ({ data }) => {
               underline="none"
               color="inherit"
               component={LinkWrapper}
-              to={`/profile/${data.username}`}
+              to={`${baseurl}/profile/${data.username}`}
             >
               <Typography>@{data.username}</Typography>{" "}
             </Link>
